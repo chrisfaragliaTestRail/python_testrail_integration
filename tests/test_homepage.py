@@ -24,7 +24,7 @@ class TestsHomepage:
         Checks actions links for trial and demo
         """
         record_property("testrail_result_comment", "1. Check Demo link")
-        assert browser_driver.find_element(By.XPATH, "(//*[contains(@href,'webinar/register')])[1]").is_displayed()
+        assert browser_driver.find_element(By.XPATH, "(//*[contains(@href,'Watch a Demo')])[1]").is_displayed()
 
         record_property("testrail_result_comment", "2. Check Trial link")
         assert browser_driver.find_element(By.XPATH, "//*[@href='/get_trial_invalid_link/']").is_displayed()
