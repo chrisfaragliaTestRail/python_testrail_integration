@@ -1,6 +1,10 @@
 # Pytest sample project
 
-## How to use the project
+## GitHub Action CI Execution
+
+[GitHub Action Pipeline](https://github.com/chrisfaragliaTestRail/python_testrail_integration/actions/workflows/run-all.yml)
+
+## How to use the project on local machine
 
 - Replace the placeholders in `trcli-config.yml` with your TestRail instance details
 - Execute the commands on the script below
