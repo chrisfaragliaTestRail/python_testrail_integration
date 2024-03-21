@@ -25,6 +25,6 @@ class TestsHomepage:
         """
         record_property("testrail_result_comment", "1. Check Demo link")
         assert browser_driver.find_element(By.XPATH, "(//*[contains(@href,'demo')])[1]").is_displayed()
-
+trial
         record_property("testrail_result_comment", "2. Check Trial link")
-        assert browser_driver.find_element(By.XPATH, "//*[@href='/get_trial_invalid_link/']").is_displayed()
+        assert browser_driver.find_element(By.XPATH, "(//*[contains(@href,'customers/testrail/trial')])[1]").is_displayed()
