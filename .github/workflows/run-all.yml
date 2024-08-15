@@ -45,7 +45,7 @@ jobs:
             --project "${{ env.PROJECT_NAME }}" \
             -u ${{ env.TESTRAIL_USER }} \
             -p "${{ secrets.TESTRAIL_USER_PW }}" \
+            --title "Pytest Automated Tests" \
             parse_junit \
             -f "reports/junit-report.xml" \
-            --title "Pytest Automated Tests" \
             --run-description ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
